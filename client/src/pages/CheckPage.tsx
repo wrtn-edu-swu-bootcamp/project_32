@@ -26,7 +26,7 @@ const MOCK_ITEMS: DisposableItem[] = [
 
 const CheckPage: React.FC = () => {
   const navigate = useNavigate();
-  const { selectedItems, addItem, removeItem, updateQuantity, manualItems, addManualItem, getTotalCount } = useCheck();
+  const { selectedItems, addItem, removeItem, updateQuantity, manualItems, addManualItem, removeManualItem, getTotalCount } = useCheck();
   const [activeCategory, setActiveCategory] = useState<'food' | 'beverage' | 'packaging'>('food');
   const [manualInput, setManualInput] = useState('');
 

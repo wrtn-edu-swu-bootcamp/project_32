@@ -27,42 +27,25 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          {/* 이번 주 요약 */}
-          <div className="mb-8 bg-white rounded-3xl p-6 shadow-xl">
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <span className="text-2xl">📈</span>
-              이번 주 요약
+          {/* 시작 안내 */}
+          <div className="mb-8 bg-white rounded-3xl p-8 shadow-xl text-center">
+            <div className="text-6xl mb-4">🌿</div>
+            <h3 className="text-2xl font-bold mb-3 text-gray-800">
+              첫 체크를 시작해보세요!
             </h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl transform hover:scale-105 transition-all shadow-md">
-                <div className="text-4xl font-bold text-blue-600 mb-1">4.3</div>
-                <div className="text-sm text-gray-600 font-medium">일평균 사용량</div>
+            <p className="text-gray-600 mb-6">
+              일회용품 사용을 기록하면<br />
+              여기에 통계가 표시됩니다
+            </p>
+            <div className="grid grid-cols-2 gap-4 text-sm text-gray-500">
+              <div className="p-4 bg-gray-50 rounded-lg">
+                <div className="text-2xl mb-2">📊</div>
+                <div>상세 통계</div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl transform hover:scale-105 transition-all shadow-md">
-                <div className="text-4xl font-bold text-green-600 mb-1">2.1🌳</div>
-                <div className="text-sm text-gray-600 font-medium">나무 보호</div>
+              <div className="p-4 bg-gray-50 rounded-lg">
+                <div className="text-2xl mb-2">🏆</div>
+                <div>랭킹 참여</div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl transform hover:scale-105 transition-all shadow-md">
-                <div className="text-4xl font-bold text-purple-600 mb-1">-15%</div>
-                <div className="text-sm text-gray-600 font-medium">지난주 대비</div>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl transform hover:scale-105 transition-all shadow-md">
-                <div className="text-4xl font-bold text-orange-600 mb-1">25위</div>
-                <div className="text-sm text-gray-600 font-medium">에코 챔피언</div>
-              </div>
-            </div>
-          </div>
-
-          {/* 연속 체크 */}
-          <div className="mb-8 bg-gradient-to-r from-orange-400 to-red-400 rounded-3xl p-6 shadow-xl transform hover:scale-105 transition-all">
-            <div className="flex items-center justify-between text-white">
-              <div>
-                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                  <span className="text-3xl">🔥</span> 연속 체크
-                </h3>
-                <p className="text-lg opacity-90">7일 연속 체크 중!</p>
-              </div>
-              <div className="text-5xl font-bold">7일</div>
             </div>
           </div>
 
