@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { DisposableItem } from '../types';
 import { useCheck } from '../contexts/CheckContext';
-import Button from '../components/common/Button';
-import Card from '../components/common/Card';
 
 // 임시 데이터 - 나중에 API에서 가져올 예정
 const MOCK_ITEMS: DisposableItem[] = [

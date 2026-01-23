@@ -1,5 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import type { DisposableItem, CheckedItem, DailyCheck } from '../types';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
 interface CheckContextType {
   selectedItems: Map<number, number>;

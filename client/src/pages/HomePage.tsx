@@ -1,7 +1,4 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '../components/common/Button';
-import Card from '../components/common/Card';
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();

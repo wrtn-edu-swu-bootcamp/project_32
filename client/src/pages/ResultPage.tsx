@@ -1,12 +1,10 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCheck } from '../contexts/CheckContext';
 import { calculateEnvironmentalImpact } from '../utils/calculations';
-import Button from '../components/common/Button';
-import Card from '../components/common/Card';
+import type { DisposableItem } from '../types';
 
 // 임시 데이터 - CheckPage와 동일한 데이터 사용
-const MOCK_ITEMS = [
+const MOCK_ITEMS: DisposableItem[] = [
   { id: 1, category: 'food', name: '플라스틱 포크/나이프/스푼', weight: 5, co2: 15, impactScore: 3, decompositionYears: 450 },
   { id: 2, category: 'food', name: '일회용 젓가락', weight: 8, co2: 10, impactScore: 2, decompositionYears: 20 },
   { id: 3, category: 'food', name: '플라스틱 빨대', weight: 0.5, co2: 1.5, impactScore: 2, decompositionYears: 200 },

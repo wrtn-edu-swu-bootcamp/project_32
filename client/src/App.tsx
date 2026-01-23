@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CheckProvider } from './contexts/CheckContext';
 import Header from './components/layout/Header';
 import Navigation from './components/layout/Navigation';
